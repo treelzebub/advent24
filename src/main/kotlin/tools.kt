@@ -12,3 +12,23 @@ fun String.columns(): List<List<Int>> {
 fun List<List<Int>>.rows(): List<List<Int>> {
   return this[0].indices.map { rowIndex -> map { it[rowIndex] } }
 }
+
+fun occurrences(first: List<Int>, second: List<Int>) = first.map { firstItem ->
+  second.count { secondItem -> secondItem == firstItem }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
